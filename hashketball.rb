@@ -164,8 +164,15 @@ def team_names
   team_names
 end
 
-def player_numbers
-  
+def player_numbers(team)
+  jersey_numbers = []
+  game_hash.each do |teams, info|
+    players_stats = info[:players]
+    players_stats.each do |player|
+      jersey_numbers << player[:number]
+    end
+  end
+  jersey_numbers
 end
 
 def player_stats
