@@ -131,7 +131,7 @@ def num_points_scored(player_name)
     info.each do |team_color_players, stats|
       stats.each do |player_array, player_info|
         if player_info.value?(player_name)
-          return game_hash[teams][team_color_players[player_array][:points]
+          return game_hash[teams][team_color_players][player_array][:points]
         end
       end
     end
