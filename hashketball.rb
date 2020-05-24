@@ -128,9 +128,7 @@ end
 
 def num_points_scored(player_name)
   game_hash.each do |teams, info|
-    if info.has_key?(:players)
-      players_stats = game_hash[teams][:players]
-    end
+    players_stats = game_hash[teams][:players]
     players_stats.each do |player_index|
       
     end
