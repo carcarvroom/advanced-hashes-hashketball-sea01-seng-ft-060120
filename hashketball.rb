@@ -127,7 +127,11 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash
+  game_hash.each do |teams, info|
+    info.each do |team_color_players, stats|
+      stats.each do |
+    end
+  end
 end
 
 def shoe_size 
