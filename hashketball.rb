@@ -168,7 +168,6 @@ def player_numbers(team)
   jersey_numbers = []
   game_hash.each do |teams, info|
     if info[:team_name] == name
-      
       players_stats = info[:players]
       players_stats.each do |player|
         jersey_numbers << player[:number]
